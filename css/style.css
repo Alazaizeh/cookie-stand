@@ -1,0 +1,176 @@
+html {
+  background-image: url(../img/23517743-pattern-with-fish-ConvertImage.jpg);
+}
+body {
+  background: rgba(214, 176, 135, 0.8);
+  font-size: 24px;
+  color: #353129;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#home h1,
+#home h3 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-left: 20px;
+  font-family: "Anton", sans-serif;
+  padding-top: 10px;
+}
+#home h1 {
+  color: #7a573f;
+}
+#home {
+  display: block;
+  background-color: rgba(170, 162, 157, 0.5);
+  padding: 20px 20px 40px;
+  border: 2px solid #353129;
+  border-radius: 50px;
+  margin: 50px;
+  box-shadow: 2px 2px 20px #353129;
+}
+main ul li {
+  padding: 10px 0 0;
+  margin-left: 20px;
+  font-size: 24px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+nav ul {
+  background-color: #353129;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav ul li {
+  text-align: center;
+  display: inline-block;
+  font-size: 32px;
+  /* float: left; */
+  padding: 0 25px 0;
+  border-right: 1px solid #d6b087;
+}
+nav ul li:last-child {
+  border-right: none;
+}
+nav ul li a {
+  display: block;
+  color: #c45c3c;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: white;
+}
+nav ul li:hover {
+  background-color: #7a573f;
+  color: white;
+}
+
+header img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto 20px;
+}
+
+div {
+  display: inline-block;
+  padding: 50px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  color: #353129;
+  -webkit-text-stroke: black 2px;
+  text-shadow: black 0px 0px 10px;
+  margin-bottom: 50px;
+}
+.aboutus p {
+  display: inline-block;
+  font-size: 58px;
+  height: 100%;
+  background-color: rgba(170, 162, 157, 0.5);
+  padding: 20px 20px 40px;
+  border: 2px solid #353129;
+  border-radius: 50px;
+  box-shadow: 2px 2px 20px #353129;
+}
+.aboutus {
+}
+footer {
+  display: block;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.sub-title {
+  display: inline-block;
+  font-size: 48px;
+  padding: 24px;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+/* .sub-title-top {
+  display: inline-block;
+  font-size: 48px;
+  padding: 24px;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-bottom-right-radius: 20px;
+} */
+
+.index-p {
+  font-size: 24px;
+  padding: 0 24px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.body-list {
+}
+
+form {
+  margin: 100px 0 0 200px;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 2px 20px #353129;
+  background-color: #353129;
+  width: 50%;
+}
+
+input[type="text"],
+input[type="email"] {
+  border: none;
+  border-bottom: 1px solid #353129;
+  width: 100%;
+  margin: 10px 0;
+  padding-bottom: 20px;
+}
+
+form [id="mess"] {
+  border: none;
+  border-bottom: 1px solid #353129;
+  width: 100%;
+  margin: 10px 0 0;
+  padding-bottom: 100px;
+}
+
+#submit-form {
+  display: inline-block;
+  background-color: #c45c3c;
+  color: white;
+  font-size: 24px;
+  padding: 10px 30px;
+  margin-left: 50%;
+}
+#submit-form:hover {
+  color: black;
+  background-color: gray;
+}
+
+.sumbit-button {
+  margin-left: 50%;
+}
