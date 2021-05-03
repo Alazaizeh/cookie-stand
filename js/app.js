@@ -112,7 +112,7 @@ sales.prototype.tableFooter = function () {
 sales.prototype.renderList = function () {
   this.setCookiesPerHoure();
 
-  let salesTable = document.getElementById("table");
+  let salesTable = document.getElementById("tbody");
   let salesRow = document.createElement("tr");
   let salesCol = document.createElement("th");
 
@@ -135,7 +135,6 @@ sales.prototype.renderList = function () {
 };
 
 let Seattle = new sales("Seatile", 23, 65, 6.3);
-Seattle.tableHeader();
 Seattle.renderList();
 
 let Tokyo = new sales("Tokyo", 3, 24, 1.2);
@@ -150,4 +149,5 @@ Paris.renderList();
 let Lima = new sales("Lima", 2, 16, 4.6);
 Lima.renderList();
 
+Lima.tableHeader();
 Lima.tableFooter();
