@@ -84,11 +84,13 @@ sales.prototype.tableFooter = function () {
   let salesTable = document.getElementById("table");
   let salesRow = document.createElement("tr");
   let salesCol = document.createElement("th");
+  let tableFoot = document.createElement("tfoot");
 
   salesCol = document.createElement("th");
   salesCol.textContent = "Totals";
   salesRow.appendChild(salesCol);
-  salesTable.appendChild(salesRow);
+  tableFoot.appendChild(salesRow);
+  salesTable.appendChild(tableFoot);
   let totalTotal = 0;
 
   for (let index = 0; index < dailySum.length; index++) {
@@ -96,13 +98,15 @@ sales.prototype.tableFooter = function () {
     salesCol.textContent = dailySum[index];
     totalTotal += dailySum[index];
     salesRow.appendChild(salesCol);
-    salesTable.appendChild(salesRow);
+    tableFoot.appendChild(salesRow);
+    salesTable.appendChild(tableFoot);
   }
 
   salesCol = document.createElement("th");
   salesCol.textContent = totalTotal;
   salesRow.appendChild(salesCol);
-  salesTable.appendChild(salesRow);
+  tableFoot.appendChild(salesRow);
+  salesTable.appendChild(tableFoot);
 };
 
 sales.prototype.renderList = function () {

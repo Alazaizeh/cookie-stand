@@ -180,6 +180,7 @@ th,
 tr {
   border: #353129 solid 2px;
   padding: 10px;
+  font-weight: bold;
 }
 thead {
   background-color: #353129;
