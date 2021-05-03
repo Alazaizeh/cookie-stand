@@ -174,3 +174,10 @@ form [id="mess"] {
 .sumbit-button {
   margin-left: 50%;
 }
+
+table,
+th,
+tr {
+  border: #353129 solid 2px;
+  padding: 10px;
+}
