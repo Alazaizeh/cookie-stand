@@ -181,3 +181,7 @@ tr {
   border: #353129 solid 2px;
   padding: 10px;
 }
+thead {
+  background-color: #353129;
+  color: #d6b087;
+}

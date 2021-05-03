@@ -50,21 +50,24 @@ sales.prototype.tableHeader = function () {
   ];
 
   let salesTable = document.getElementById("table");
+  let tableHead = document.createElement("thead");
+
   let salesRow = document.createElement("tr");
   let salesCol = document.createElement("th");
 
   salesCol = document.createElement("th");
   salesCol.textContent = "";
   salesRow.appendChild(salesCol);
-  salesTable.appendChild(salesRow);
+  tableHead.appendChild(salesRow);
+  salesTable.appendChild(tableHead);
 
   for (let index = 0; index < salesHour.length; index++) {
     salesCol = document.createElement("th");
     salesCol.textContent = salesHour[index];
     salesRow.appendChild(salesCol);
-    salesTable.appendChild(salesRow);
+    tableHead.appendChild(salesRow);
+    salesTable.appendChild(tableHead);
   }
-  salesRow = document.createElement("tr");
 };
 
 sales.prototype.tableFooter = function () {
