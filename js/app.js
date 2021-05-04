@@ -10,6 +10,7 @@ function sales(storeName, minimumCustomers, maximumCustomers, averageCookies) {
   this.cookiesPerHoure = [];
   this.totalCookies = 0;
   this.customersPerHour = [];
+  this.renderList();
 }
 
 sales.prototype.getRandomCustomers = function () {
@@ -134,18 +135,13 @@ function tableStructure() {
 }
 
 let Seattle = new sales("Seatile", 23, 65, 6.3);
-Seattle.renderList();
 
 let Tokyo = new sales("Tokyo", 3, 24, 1.2);
-Tokyo.renderList();
 
 let Dubai = new sales("Dubai", 11, 38, 3.7);
-Dubai.renderList();
 
 let Paris = new sales("Paris", 20, 38, 2.3);
-Paris.renderList();
 
 let Lima = new sales("Lima", 2, 16, 4.6);
-Lima.renderList();
 
 tableStructure();
