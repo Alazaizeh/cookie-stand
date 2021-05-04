@@ -55,7 +55,6 @@ sales.prototype.renderList = function () {
   }
 
   storesArray.push(this);
-  console.log(this.customersPerHour);
 };
 function tableStructure() {
   let salesHour = [
