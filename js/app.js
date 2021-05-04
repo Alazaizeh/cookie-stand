@@ -6,9 +6,10 @@ function sales(storeName, minimumCustomers, maximumCustomers, averageCookies) {
   this.storeName = storeName;
   this.minimumCustomers = minimumCustomers;
   this.maximumCustomers = maximumCustomers;
-  this.averageCookies = maximumCustomers;
+  this.averageCookies = averageCookies;
   this.cookiesPerHoure = [];
   this.totalCookies = 0;
+  this.customersPerHour = [];
 }
 
 sales.prototype.getRandomCustomers = function () {
@@ -19,6 +20,7 @@ sales.prototype.getRandomCustomers = function () {
 
 sales.prototype.getCookiesPerHoure = function () {
   let customers = this.getRandomCustomers();
+  this.customersPerHour.push(customers);
   let cookies = customers * this.averageCookies;
 
   return cookies;
@@ -53,8 +55,8 @@ sales.prototype.renderList = function () {
   }
 
   storesArray.push(this);
+  console.log(this.customersPerHour);
 };
-
 function tableStructure() {
   let salesHour = [
     "6:00am	",
