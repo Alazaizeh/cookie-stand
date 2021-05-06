@@ -229,3 +229,22 @@ fieldset {
   color: #353129;
   font-weight: bold;
 }
+
+.family {
+  display: block;
+  box-shadow: 2px 2px 20px #353129;
+  margin: 0 0 30px 20px;
+}
+
+.sub-img {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  box-shadow: 2px 2px 20px #353129;
+  margin: 30px 0 30px 20px;
+}
+.footerimg {
+  display: block;
+  width: 150px;
+  margin: 20px auto 0;
+}
