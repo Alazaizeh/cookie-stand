@@ -110,7 +110,7 @@ function tableStructure() {
   salesRow = document.createElement("tr");
   salesCol = document.createElement("th");
   let tableFoot = document.createElement("tfoot");
-
+  tableFoot.id = "sales-foot";
   salesCol = document.createElement("th");
   salesCol.textContent = "Totals";
   salesRow.appendChild(salesCol);
@@ -132,6 +132,51 @@ function tableStructure() {
   salesRow.appendChild(salesCol);
   tableFoot.appendChild(salesRow);
   salesTable.appendChild(tableFoot);
+}
+
+function updateTable() {
+  let dailySum = [];
+  let totalTotal = 0;
+
+  for (let index = 0; index < 14; index++) {
+    dailySum[index] = 0;
+  }
+  for (let index = 0; index < storesArray.length; index++) {
+    for (let j = 0; j < 14; j++) {
+      dailySum[j] += storesArray[index].cookiesPerHoure[j];
+      totalTotal += storesArray[index].cookiesPerHoure[j];
+    }
+  }
+
+  let salesFoot = document.getElementById("sales-foot");
+  for (let i = 0; i <= dailySum.length; i++) {
+    if (i == dailySum.length) {
+      salesFoot.rows[0].cells[i + 1].textContent = totalTotal;
+      break;
+    }
+    salesFoot.rows[0].cells[i + 1].textContent = dailySum[i];
+  }
+}
+
+let salesForm = document.getElementById("sales-form");
+salesForm.addEventListener("submit", addBranch);
+function addBranch(event) {
+  event.preventDefault();
+
+  let storeName = event.target.storeName.value;
+  let minimumCustomers = event.target.minimumCustomers.value;
+  let maximumCustomers = event.target.maximumCustomers.value;
+  let averageCookies = event.target.averageCookies.value;
+
+  let newBranch = new sales(
+    storeName,
+    minimumCustomers,
+    maximumCustomers,
+    averageCookies
+  );
+  updateTable();
+
+  document.getElementById("sales-form").reset();
 }
 
 let Seattle = new sales("Seatile", 23, 65, 6.3);

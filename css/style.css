@@ -132,7 +132,7 @@ footer {
 .body-list {
 }
 
-form {
+.contact {
   margin: 100px 0 0 200px;
   color: white;
   padding: 20px;
@@ -141,8 +141,8 @@ form {
   width: 50%;
 }
 
-input[type="text"],
-input[type="email"] {
+.contact input[type="text"],
+.contact input[type="email"] {
   border: none;
   border-bottom: 1px solid #353129;
   width: 100%;
@@ -150,7 +150,7 @@ input[type="email"] {
   padding-bottom: 20px;
 }
 
-form [id="mess"] {
+.contact [id="mess"] {
   border: none;
   border-bottom: 1px solid #353129;
   width: 100%;
@@ -185,4 +185,47 @@ tr {
 thead {
   background-color: #353129;
   color: #d6b087;
+}
+legend {
+  background-color: #353129;
+  color: #d6b087;
+  padding: 5px 10px;
+}
+fieldset {
+  background-color: rgba(170, 162, 157, 0.5);
+  display: inline-block;
+  padding: 20px;
+  display: block;
+  border: 2px solid #353129;
+  border-radius: 50px;
+  margin: 0 50px;
+  box-shadow: 2px 2px 20px #353129;
+  font-weight: bold;
+}
+#sales-form {
+  padding: 20px;
+}
+
+#sales-form input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #353129;
+  width: 100%;
+  margin: 10px 0;
+  padding-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  font-weight: bold;
+}
+#sales-submit {
+  background-color: #353129;
+  color: #d6b087;
+  font-size: 20px;
+  padding: 10px 30px;
+  margin-left: 50%;
+  font-weight: bold;
+}
+#sales-submit:hover {
+  background-color: #d6b087;
+  color: #353129;
+  font-weight: bold;
 }
