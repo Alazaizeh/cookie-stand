@@ -29,53 +29,43 @@ body {
   margin: 50px;
   box-shadow: 2px 2px 20px #353129;
 }
+
 main ul li {
   padding: 10px 0 0;
-  margin-left: 20px;
-  font-size: 24px;
+  margin-left: 75px;
+  font-weight: bold;
+  font-size: 32px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  list-style-image: url("../img/Webp.net-resizeimage.png");
 }
+
 nav ul {
-  background-color: #353129;
-  margin: 0;
-  padding: 0;
+  background-color: #292620;
   text-align: center;
 }
 nav ul li {
-  text-align: center;
+  margin: 0 -3px;
   display: inline-block;
   font-size: 32px;
-  /* float: left; */
-  padding: 0 25px 0;
-  border-right: 1px solid #d6b087;
+  padding: 25px;
+  color: #c45c3c;
+  border-right: #000 solid 1px;
 }
 nav ul li:last-child {
   border-right: none;
 }
-nav ul li a {
-  display: block;
-  color: #c45c3c;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-nav ul li a:hover {
-  color: white;
-}
 nav ul li:hover {
-  background-color: #7a573f;
-  color: white;
+  background-color: #1a1814;
 }
 
+nav ul li a {
+  color: inherit;
+  text-decoration: none;
+}
 header img {
   display: block;
   max-width: 100%;
   margin: 0 auto 20px;
-}
-
-div {
-  display: inline-block;
-  padding: 50px;
 }
 
 h2 {
@@ -87,31 +77,42 @@ h2 {
   text-shadow: black 0px 0px 10px;
   margin-bottom: 50px;
 }
+.Work-hours li {
+  padding: 10px 0 0;
+  margin-left: 75px;
+  font-weight: bold;
+  font-size: 32px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  list-style-image: url("../img/watch.png");
+}
+
 .aboutus p {
   display: inline-block;
   font-size: 58px;
   height: 100%;
   background-color: rgba(170, 162, 157, 0.5);
   padding: 20px 20px 40px;
-  border: 2px solid #353129;
-  border-radius: 50px;
   box-shadow: 2px 2px 20px #353129;
+  margin-left: 25px;
 }
-.aboutus {
-}
+
 footer {
   display: block;
   text-align: center;
   padding-top: 10%;
   padding-bottom: 5%;
+  font-weight: bold;
 }
 
 .sub-title {
   display: inline-block;
-  font-size: 48px;
-  padding: 24px;
+  font-size: 58px;
+  padding: 32px 24px;
   font-weight: bold;
   font-family: Georgia, "Times New Roman", Times, serif;
+  color: #353129;
+  -webkit-text-stroke: #353129 2px;
+  /* text-shadow: black 0px 0px 10px; */
 }
 /* .sub-title-top {
   display: inline-block;
@@ -127,9 +128,6 @@ footer {
   padding: 0 24px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.body-list {
 }
 
 .contact {
@@ -186,7 +184,7 @@ thead {
   background-color: #353129;
   color: #d6b087;
 }
-legend {
+#sales-form fieldset legend {
   background-color: #353129;
   color: #d6b087;
   padding: 5px 10px;
@@ -201,6 +199,10 @@ fieldset {
   margin: 0 50px;
   box-shadow: 2px 2px 20px #353129;
   font-weight: bold;
+}
+.sale-div {
+  display: inline-block;
+  padding: 50px;
 }
 #sales-form {
   padding: 20px;
@@ -229,7 +231,6 @@ fieldset {
   color: #353129;
   font-weight: bold;
 }
-
 .family {
   display: block;
   box-shadow: 2px 2px 20px #353129;
@@ -247,4 +248,31 @@ fieldset {
   display: block;
   width: 150px;
   margin: 20px auto 0;
+  opacity: 0.5;
+}
+
+hr {
+  margin-top: 50px;
+  border: #353129 dashed 1px;
+  width: 65%;
+  opacity: 0.2;
+}
+
+.goup {
+  width: 40px;
+  float: right;
+  margin-right: 50px;
+}
+.goup:hover {
+  opacity: 0.6;
+}
+.aboutus {
+  margin-top: 50px;
+}
+
+p legend {
+  background-color: #292620;
+  color: #d6b087;
+  padding: 5px 10px;
+  margin-bottom: 30px;
 }
