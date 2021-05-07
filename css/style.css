@@ -7,6 +7,7 @@ body {
   color: #353129;
   min-width: 100%;
   min-height: 100%;
+  background-size: 100%;
 }
 
 #home h1,
@@ -28,6 +29,7 @@ body {
   border-radius: 50px;
   margin: 50px;
   box-shadow: 2px 2px 20px #353129;
+  overflow-x: auto;
 }
 
 main ul li {
@@ -173,7 +175,15 @@ footer {
   margin-left: 50%;
 }
 
-table,
+#table {
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  border: #353129 double 2px;
+  border-collapse: separate;
+  border-radius: 10px;
+}
+
 th,
 tr {
   border: #353129 solid 2px;
@@ -205,7 +215,10 @@ fieldset {
   padding: 50px;
 }
 #sales-form {
+  display: flex;
+  flex-direction: row;
   padding: 20px;
+  /* max-width: 100%; */
 }
 
 #sales-form input[type="text"],
