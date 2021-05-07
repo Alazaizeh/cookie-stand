@@ -208,7 +208,8 @@ fieldset {
   padding: 20px;
 }
 
-#sales-form input[type="text"] {
+#sales-form input[type="text"],
+#sales-form input[type="number"] {
   border: none;
   border-bottom: 1px solid #353129;
   width: 100%;
@@ -217,6 +218,12 @@ fieldset {
   background-color: rgba(255, 255, 255, 0.5);
   font-size: 20px;
   font-weight: bold;
+}
+/* hide input number arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 #sales-submit {
   background-color: #353129;
